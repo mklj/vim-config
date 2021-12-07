@@ -1,0 +1,25 @@
+# Ultisnips on github : https://github.com/SirVer/ultisnips/
+#
+# Snippets for pascal language .pas files
+#
+
+snippet prog "typical program head" b
+program ${1:program name};
+
+uses
+	${2:units};
+${3:type}
+	${4:types}
+endsnippet
+
+snippet proc "define a procedure" b
+procedure ${2:(${1:arguments})};
+${3:var}
+	${4:local_variables}
+begin
+	$0
+endsnippet
+
+snippet int "integer"
+integer
+endsnippet
