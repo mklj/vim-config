@@ -435,6 +435,12 @@ let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\
 " https://github.com/c9s/perlomni.vim
 "let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+" === Plugin: LeaderF
+" C Extension requires packages python3-dev and python3-setuptools
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+" hide icons
+let g:Lf_ShowDevIcons = 0
+
 " === OTHER PLUGINS
 Plug 'majutsushi/tagbar'
 nmap <F9> :TagbarToggle<CR>
