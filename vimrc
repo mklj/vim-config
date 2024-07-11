@@ -55,13 +55,8 @@ nnoremap Q <nop>
 nnoremap K <nop>
 
 " ======= filetypes
-" git commit messages: spell checking and automatic wrapping at 72 columns
-autocmd Filetype gitcommit setlocal spell textwidth=72
 " use latex flavor for all .tex files
 let g:tex_flavor = "latex"
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-autocmd BufNewFile,BufReadPost *.sls set filetype=yaml
-autocmd BufNewFile,BufReadPost *.conf set filetype=conf
 
 " where backup files are kept
 set backupdir=~/.vim/backup
